@@ -1,0 +1,14 @@
+{
+  "name": "@maemo-react/widgets",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "peerDependencies": {
+    "react": "19.3.0"
+  },
+  "devDependencies": {
+    "@maemo-react/core": "0.1.0",
+    "@maemo-react/types": "0.1.0"
+  }
+}

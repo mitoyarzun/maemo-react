@@ -1,0 +1,21 @@
+{
+  "name": "ha-remote",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "maemo-react build",
+    "package": "maemo-react package",
+    "deploy": "maemo-react deploy",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@maemo-react/core": "0.1.0",
+    "@maemo-react/widgets": "0.1.0",
+    "react": "19.3.0"
+  },
+  "devDependencies": {
+    "@maemo-react/cli": "0.1.0",
+    "@maemo-react/types": "0.1.0"
+  }
+}

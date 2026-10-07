@@ -1,0 +1,13 @@
+{
+  "a": {
+    "light.ceiling": { "s": "on", "a": { "friendly_name": "Ceiling light", "brightness": 128, "supported_color_modes": ["brightness"], "color_mode": "brightness" }, "c": "c1", "lc": 1700000000, "lu": 1700000000 },
+    "light.desk": { "s": "off", "a": { "friendly_name": "Desk", "supported_color_modes": ["onoff"] }, "c": "c2", "lc": 1700000000, "lu": 1700000000 },
+    "switch.fan": { "s": "off", "a": { "friendly_name": "Fan" }, "c": "c3", "lc": 1700000000, "lu": 1700000000 },
+    "climate.thermostat": { "s": "heat", "a": { "friendly_name": "Thermostat", "temperature": 21, "current_temperature": 19.5, "hvac_modes": ["off", "heat", "cool"], "target_temp_step": 0.5, "min_temp": 7, "max_temp": 35 }, "c": "c4", "lc": 1700000000, "lu": 1700000000 },
+    "cover.blinds": { "s": "open", "a": { "friendly_name": "Blinds", "current_position": 100, "supported_features": 15 }, "c": "c5", "lc": 1700000000, "lu": 1700000000 },
+    "input_boolean.guest": { "s": "off", "a": { "friendly_name": "Guest mode" }, "c": "c6", "lc": 1700000000, "lu": 1700000000 },
+    "light.hidden": { "s": "off", "a": { "friendly_name": "Hidden" }, "c": "c7", "lc": 1700000000, "lu": 1700000000 },
+    "switch.child_lock": { "s": "off", "a": { "friendly_name": "Child lock" }, "c": "c8", "lc": 1700000000, "lu": 1700000000 },
+    "sensor.temp": { "s": "19.5", "a": { "friendly_name": "Temperature", "unit_of_measurement": "°C" }, "c": "c9", "lc": 1700000000, "lu": 1700000000 }
+  }
+}

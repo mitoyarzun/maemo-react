@@ -1,0 +1,14 @@
+#!/bin/sh
+# postinst for maemo-react-runtime. It is safe to run again.
+set -e
+H=/opt/n810-modern/bin/maemo-react-host
+# Compile the prelude and every installed application again: the bytecode
+# must match the QuickJS of this runtime.
+# An install must not fail, but say so when a compile fails.
+warn() { echo "maemo-react: bytecode compile failed for $1; the application starts slower" >&2; }
+P=/opt/n810-modern/lib/maemo-react/prelude.js
+$H --compile "$P" || warn "$P"
+for app in /opt/n810-modern/share/maemo-react/apps/*/app.js; do
+	if [ -f "$app" ]; then $H --compile "$app" || warn "$app"; fi
+done
+exit 0

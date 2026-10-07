@@ -1,0 +1,8 @@
+#!/bin/sh
+# postrm for maemo-react-runtime.
+set -e
+if [ "$1" = remove ] || [ "$1" = purge ]; then
+	rm -f /opt/n810-modern/lib/maemo-react/prelude.qbc
+	rmdir /opt/n810-modern/lib/maemo-react 2>/dev/null || true
+fi
+exit 0

@@ -1,0 +1,17 @@
+{
+  "name": "@maemo-react/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "maemo-react": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node22 --packages=external --banner:js=\"#!/usr/bin/env node\" --outfile=dist/cli.js --log-level=warning && chmod +x dist/cli.js"
+  },
+  "dependencies": {
+    "esbuild": "0.28.2"
+  },
+  "engines": {
+    "node": ">=22.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@maemo-react/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "react": "19.3.0"
+  },
+  "dependencies": {
+    "react-reconciler": "0.34.0"
+  },
+  "devDependencies": {
+    "@maemo-react/types": "0.1.0"
+  }
+}

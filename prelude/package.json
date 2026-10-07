@@ -1,0 +1,9 @@
+{
+  "name": "@maemo-react/prelude",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --format=esm --target=es2022 --external:maemo:* --outfile=dist/prelude.js --log-level=warning"
+  }
+}

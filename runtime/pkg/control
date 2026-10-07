@@ -1,0 +1,11 @@
+Package: maemo-react-runtime
+Version: @VERSION@
+Architecture: armel
+Maintainer: maemo-react <maemo-react@users.noreply.github.com>
+Section: libs
+Priority: optional
+Depends: n810-modern-tls (>= 1.1), libgtk2.0-0, libhildon1
+Description: maemo-react runtime: React applications on GTK 2 and Hildon
+ maemo-react-host runs applications that are made with maemo-react. It
+ contains QuickJS, a GObject bridge, fetch() and WebSocket over the TLS stack
+ of n810-modern-tls, and localStorage.

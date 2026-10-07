@@ -1,0 +1,6 @@
+{
+  "id": "maemo-react-hello",
+  "name": "React Hello",
+  "version": "0.1.0",
+  "description": "Fetches JSON over HTTPS with maemo-react"
+}

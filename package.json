@@ -1,0 +1,23 @@
+{
+  "name": "maemo-react-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": ["prelude", "packages/*", "examples/*"],
+  "scripts": {
+    "build:prelude": "npm run build -w @maemo-react/prelude",
+    "build:test-bundles": "node runtime/test/build-bundles.mjs",
+    "typegen:emit": "node typegen/emit.mjs",
+    "test": "vitest run",
+    "build:cli": "npm run build -w @maemo-react/cli",
+    "typecheck": "tsc -p packages/types/test && tsc -p packages/cli && tsc -p examples/hello && tsc -p examples/bench && tsc -p examples/widgets && tsc -p examples/ha-remote"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "19.3.0",
+    "esbuild": "0.28.2",
+    "react": "19.3.0",
+    "react-reconciler": "0.34.0",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  }
+}

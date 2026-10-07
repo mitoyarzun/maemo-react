@@ -1,0 +1,6 @@
+{
+  "id": "ha-remote",
+  "name": "HA Remote",
+  "version": "0.1.0",
+  "description": "A Home Assistant remote for the N810: lights, switches, climate and covers"
+}

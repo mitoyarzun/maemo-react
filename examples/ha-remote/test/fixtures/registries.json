@@ -1,0 +1,25 @@
+{
+  "areas": [
+    { "area_id": "living_room", "name": "Living room", "picture": null },
+    { "area_id": "kitchen", "name": "Kitchen", "picture": null },
+    { "area_id": "garage", "name": "Garage", "picture": null }
+  ],
+  "devices": [
+    { "id": "dev1", "area_id": "kitchen", "name": "Fan controller" },
+    { "id": "dev2", "area_id": null, "name": "Hub" }
+  ],
+  "display": {
+    "entity_categories": { "0": "config", "1": "diagnostic" },
+    "entities": [
+      { "ei": "light.ceiling", "ai": "living_room", "hn": true, "pl": "hue" },
+      { "ei": "light.desk", "ai": "living_room", "en": "Desk lamp", "pl": "hue" },
+      { "ei": "switch.fan", "di": "dev1", "pl": "mqtt" },
+      { "ei": "climate.thermostat", "ai": "living_room", "pl": "mqtt" },
+      { "ei": "cover.blinds", "ai": "living_room", "pl": "mqtt" },
+      { "ei": "light.hidden", "ai": "kitchen", "hb": true, "pl": "hue" },
+      { "ei": "switch.child_lock", "ai": "kitchen", "ec": 0, "pl": "mqtt" },
+      { "ei": "light.no_state", "ai": "garage", "pl": "hue" },
+      { "ei": "sensor.temp", "ai": "kitchen", "pl": "mqtt" }
+    ]
+  }
+}

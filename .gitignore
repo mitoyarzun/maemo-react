@@ -1,0 +1,8 @@
+node_modules/
+dist/
+runtime/build/
+runtime/test/generated/
+typegen/build/
+*.qbc
+__pycache__/
+.superpowers/
